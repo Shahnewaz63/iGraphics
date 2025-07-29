@@ -116,6 +116,13 @@ void iDraw()
 
     else
     {
+        iClear();
+        iShowLoadedImage(0, 0, &img);
+        iShowSprite(&sprite);
+        for (int i = 0; i < OBS_COUNT; i++)
+        {
+            iShowSprite(&obs[i]);
+        }
         iShowLoadedImage(280, 350, &gameover);
         iShowLoadedImage(550, 250, &restart_button);
         iShowLoadedImage(350, 250, &home_button);
